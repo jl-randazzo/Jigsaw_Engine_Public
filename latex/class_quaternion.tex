@@ -1,0 +1,55 @@
+\hypertarget{class_quaternion}{}\doxysection{Quaternion Class Reference}
+\label{class_quaternion}\index{Quaternion@{Quaternion}}
+
+
+{\ttfamily \#include $<$Lin\+Alg.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quaternion_af460a270a020c813f6b50e985349c7a1}\label{class_quaternion_af460a270a020c813f6b50e985349c7a1}} 
+constexpr {\bfseries Quaternion} (float w, float i, float j, float k)
+\item 
+\mbox{\Hypertarget{class_quaternion_a323e5e480d3325c1263ebe6ea8c2094d}\label{class_quaternion_a323e5e480d3325c1263ebe6ea8c2094d}} 
+constexpr {\bfseries Quaternion} (float w, const \mbox{\hyperlink{class_vector3}{Vector3}} \&vector)
+\item 
+\mbox{\Hypertarget{class_quaternion_adfe462d49f4690bafff586c76813968d}\label{class_quaternion_adfe462d49f4690bafff586c76813968d}} 
+{\bfseries Quaternion} (const \mbox{\hyperlink{class_vector3}{Vector3}} \&axis, float theta)
+\item 
+\mbox{\Hypertarget{class_quaternion_a7bb3e7ef4452d39a38bc9427f0eb9316}\label{class_quaternion_a7bb3e7ef4452d39a38bc9427f0eb9316}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_quaternion}{Quaternion}} \&other)
+\item 
+\mbox{\Hypertarget{class_quaternion_aa5333ab28dbe4d5ae15ab5dbc36b90ca}\label{class_quaternion_aa5333ab28dbe4d5ae15ab5dbc36b90ca}} 
+\mbox{\hyperlink{class_quaternion}{Quaternion}} {\bfseries Conjugate} () const
+\item 
+\mbox{\Hypertarget{class_quaternion_a757ec55f9f361fcd8b518abaec05b29b}\label{class_quaternion_a757ec55f9f361fcd8b518abaec05b29b}} 
+\mbox{\hyperlink{class_quaternion}{Quaternion}} {\bfseries operator$\ast$} (const \mbox{\hyperlink{class_quaternion}{Quaternion}} \&other) const
+\item 
+\mbox{\hyperlink{class_vector3}{Vector3}} \mbox{\hyperlink{class_quaternion_a7727742f708b7d38fb02fce38b375202}{Rotate}} (const \mbox{\hyperlink{class_vector3}{Vector3}} \&v) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quaternion_aa44a65ab99e36f6ab8771030eed8a7ad}\label{class_quaternion_aa44a65ab99e36f6ab8771030eed8a7ad}} 
+float {\bfseries w}
+\item 
+\mbox{\Hypertarget{class_quaternion_a88f0e65b771ab158ca946810f5a7a6eb}\label{class_quaternion_a88f0e65b771ab158ca946810f5a7a6eb}} 
+\mbox{\hyperlink{class_vector3}{Vector3}} {\bfseries ijk}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_quaternion}{Quaternion}} class with optimized vector rotation 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quaternion_a7727742f708b7d38fb02fce38b375202}\label{class_quaternion_a7727742f708b7d38fb02fce38b375202}} 
+\index{Quaternion@{Quaternion}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Quaternion@{Quaternion}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3}{Vector3}} Quaternion\+::\+Rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is an optimized rotation, simplified from multiplying q $\ast$ p $\ast$ q{\ttfamily where q} is the Conjugate of q 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lin\+Alg.\+h\end{DoxyCompactItemize}

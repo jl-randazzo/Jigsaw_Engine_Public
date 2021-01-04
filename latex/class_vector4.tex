@@ -1,0 +1,53 @@
+\hypertarget{class_vector4}{}\doxysection{Vector4 Class Reference}
+\label{class_vector4}\index{Vector4@{Vector4}}
+
+
+{\ttfamily \#include $<$Lin\+Alg.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector4_afbecf66f228d7b6d6fda19f4d0441ddf}\label{class_vector4_afbecf66f228d7b6d6fda19f4d0441ddf}} 
+constexpr {\bfseries Vector4} (float x, float y, float z, float w)
+\item 
+\mbox{\Hypertarget{class_vector4_ad0365c953ed8e68ee7e864d2531addc4}\label{class_vector4_ad0365c953ed8e68ee7e864d2531addc4}} 
+constexpr {\bfseries Vector4} (const \mbox{\hyperlink{class_vector3}{Vector3}} \&vector, float w)
+\item 
+\mbox{\Hypertarget{class_vector4_ac55f4560e2aabb78b8ffa3f57b1f52e1}\label{class_vector4_ac55f4560e2aabb78b8ffa3f57b1f52e1}} 
+float {\bfseries Dot} (const \mbox{\hyperlink{class_vector4}{Vector4}} \&v) const
+\item 
+\mbox{\Hypertarget{class_vector4_a5690ebea318bfa086450ac02ec02c2b3}\label{class_vector4_a5690ebea318bfa086450ac02ec02c2b3}} 
+{\bfseries operator Vector3} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector4_a5b60e9edd604f368885a3a97d3de35fe}\label{class_vector4_a5b60e9edd604f368885a3a97d3de35fe}} 
+static \mbox{\hyperlink{class_vector4}{Vector4}} {\bfseries As\+Point} (const \mbox{\hyperlink{class_vector3}{Vector3}} \&v)
+\item 
+\mbox{\Hypertarget{class_vector4_a23e46647d3f1232958da8b822a555ec7}\label{class_vector4_a23e46647d3f1232958da8b822a555ec7}} 
+static \mbox{\hyperlink{class_vector4}{Vector4}} {\bfseries As\+Vector} (const \mbox{\hyperlink{class_vector3}{Vector3}} \&v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector4_a1cc671b8b90e1b8145e74f128d828fbe}\label{class_vector4_a1cc671b8b90e1b8145e74f128d828fbe}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{class_vector4_a72ef7eedea2e006cf6a64fe192088509}\label{class_vector4_a72ef7eedea2e006cf6a64fe192088509}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{class_vector4_aa0d02112e7661ac9b90d1c17c8f1b1e6}\label{class_vector4_aa0d02112e7661ac9b90d1c17c8f1b1e6}} 
+float {\bfseries z}
+\item 
+\mbox{\Hypertarget{class_vector4_a988ad29d481ee14c5c6c35dbdf58c559}\label{class_vector4_a988ad29d481ee14c5c6c35dbdf58c559}} 
+float {\bfseries w}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Primarily used with matrices. Encodes whether the vector is a point or a vector using the fourth value (\textquotesingle{}1\textquotesingle{} for point, \textquotesingle{}0\textquotesingle{} for vector) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lin\+Alg.\+h\end{DoxyCompactItemize}

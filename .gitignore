@@ -1,0 +1,6 @@
+.vs/*
+Debug/**
+Test/**
+Test_main/**
+x64/**
+cloc*exe

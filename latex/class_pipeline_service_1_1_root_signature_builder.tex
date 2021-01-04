@@ -1,0 +1,136 @@
+\hypertarget{class_pipeline_service_1_1_root_signature_builder}{}\doxysection{Pipeline\+Service\+::Root\+Signature\+Builder Class Reference}
+\label{class_pipeline_service_1_1_root_signature_builder}\index{PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}}
+
+
+Builder class for compiling Root\+Signatures. Unlike some other builders, the order in which some of these calls are made is important. The \textquotesingle{}Set\+Next\+Shader\+Visibility\textquotesingle{} call will have an impact on subsequent \textquotesingle{}Push\textquotesingle{} calls.  
+
+
+
+
+{\ttfamily \#include $<$Root\+Signature\+Builder.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder_aea1e666c866c5867d905cc4ffe3c4ce2}{Set\+Next\+Shader\+Visiblity}} (const D3\+D12\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+TY visibility)
+\begin{DoxyCompactList}\small\item\em Indicates the visibility of the subsequent \textquotesingle{}Push\textquotesingle{} calls to the root signature description. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder_a860e6bc0b2318a580bc0b187fa38555a}{Or\+Root\+Flags}} (D3\+D12\+\_\+\+R\+O\+O\+T\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+F\+L\+A\+GS flags)
+\begin{DoxyCompactList}\small\item\em Inclusive bit-\/wise or of the current Root Signature flags with the \textquotesingle{}flags\textquotesingle{} parameter \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder_a5bf855c467ce7a2cb26eab94ba15aa62}{And\+Root\+Flags}} (D3\+D12\+\_\+\+R\+O\+O\+T\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+F\+L\+A\+GS flags)
+\begin{DoxyCompactList}\small\item\em Sets the current flag value to that of the bit-\/wise and of the \char`\"{}flags\char`\"{} parameter and the builders \char`\"{}flags\char`\"{} member \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder_a8733ee9e1175f91cf3a182b8ff3230e0}{Push\+Struct\+As32\+Bit\+Constant}} (const U\+I\+NT register\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Registers the size of the given template parameter as the next value to be interpreted in the root signature as a series of 32-\/bit constants The visibility of the given parameter will be determined by the most recent call to \textquotesingle{}Set\+Next\+Shader\+Visibility\textquotesingle{} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_resource_management_1_1_root_signature_resource}{Resource\+Management\+::\+Root\+Signature\+Resource}} $\ast$ \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder_a6240e7deaa2799c9a92e0e7bf4923d0f}{Build}} (Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ cmd\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Completes the construction and builds a Root\+Signature\+Resource for use in the pipeline \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Builder class for compiling Root\+Signatures. Unlike some other builders, the order in which some of these calls are made is important. The \textquotesingle{}Set\+Next\+Shader\+Visibility\textquotesingle{} call will have an impact on subsequent \textquotesingle{}Push\textquotesingle{} calls. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pipeline_service_1_1_root_signature_builder_a5bf855c467ce7a2cb26eab94ba15aa62}\label{class_pipeline_service_1_1_root_signature_builder_a5bf855c467ce7a2cb26eab94ba15aa62}} 
+\index{PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}!AndRootFlags@{AndRootFlags}}
+\index{AndRootFlags@{AndRootFlags}!PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{AndRootFlags()}{AndRootFlags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& Root\+Signature\+Builder\+::\+And\+Root\+Flags (\begin{DoxyParamCaption}\item[{D3\+D12\+\_\+\+R\+O\+O\+T\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+F\+L\+A\+GS}]{flags }\end{DoxyParamCaption})}
+
+
+
+Sets the current flag value to that of the bit-\/wise and of the \char`\"{}flags\char`\"{} parameter and the builders \char`\"{}flags\char`\"{} member 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_root_signature_builder_a6240e7deaa2799c9a92e0e7bf4923d0f}\label{class_pipeline_service_1_1_root_signature_builder_a6240e7deaa2799c9a92e0e7bf4923d0f}} 
+\index{PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}!Build@{Build}}
+\index{Build@{Build}!PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_management_1_1_root_signature_resource}{Resource\+Management\+::\+Root\+Signature\+Resource}} $\ast$ Root\+Signature\+Builder\+::\+Build (\begin{DoxyParamCaption}\item[{Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$}]{cmd\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Completes the construction and builds a Root\+Signature\+Resource for use in the pipeline 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+list} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_root_signature_builder_a860e6bc0b2318a580bc0b187fa38555a}\label{class_pipeline_service_1_1_root_signature_builder_a860e6bc0b2318a580bc0b187fa38555a}} 
+\index{PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}!OrRootFlags@{OrRootFlags}}
+\index{OrRootFlags@{OrRootFlags}!PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{OrRootFlags()}{OrRootFlags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& Root\+Signature\+Builder\+::\+Or\+Root\+Flags (\begin{DoxyParamCaption}\item[{D3\+D12\+\_\+\+R\+O\+O\+T\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+F\+L\+A\+GS}]{flags }\end{DoxyParamCaption})}
+
+
+
+Inclusive bit-\/wise or of the current Root Signature flags with the \textquotesingle{}flags\textquotesingle{} parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_root_signature_builder_a8733ee9e1175f91cf3a182b8ff3230e0}\label{class_pipeline_service_1_1_root_signature_builder_a8733ee9e1175f91cf3a182b8ff3230e0}} 
+\index{PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}!PushStructAs32BitConstant@{PushStructAs32BitConstant}}
+\index{PushStructAs32BitConstant@{PushStructAs32BitConstant}!PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{PushStructAs32BitConstant()}{PushStructAs32BitConstant()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}}\& Pipeline\+Service\+::\+Root\+Signature\+Builder\+::\+Push\+Struct\+As32\+Bit\+Constant (\begin{DoxyParamCaption}\item[{const U\+I\+NT}]{register\+\_\+number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registers the size of the given template parameter as the next value to be interpreted in the root signature as a series of 32-\/bit constants The visibility of the given parameter will be determined by the most recent call to \textquotesingle{}Set\+Next\+Shader\+Visibility\textquotesingle{} 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em register\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_root_signature_builder_aea1e666c866c5867d905cc4ffe3c4ce2}\label{class_pipeline_service_1_1_root_signature_builder_aea1e666c866c5867d905cc4ffe3c4ce2}} 
+\index{PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}!SetNextShaderVisiblity@{SetNextShaderVisiblity}}
+\index{SetNextShaderVisiblity@{SetNextShaderVisiblity}!PipelineService::RootSignatureBuilder@{PipelineService::RootSignatureBuilder}}
+\doxysubsubsection{\texorpdfstring{SetNextShaderVisiblity()}{SetNextShaderVisiblity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_root_signature_builder}{Root\+Signature\+Builder}} \& Root\+Signature\+Builder\+::\+Set\+Next\+Shader\+Visiblity (\begin{DoxyParamCaption}\item[{const D3\+D12\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+V\+I\+S\+I\+B\+I\+L\+I\+TY}]{visibility }\end{DoxyParamCaption})}
+
+
+
+Indicates the visibility of the subsequent \textquotesingle{}Push\textquotesingle{} calls to the root signature description. 
+
+Any encountered Shader visibilities will automatically adjust the Root Signature flags to enable access to the root signature for the corresponding shader type
+
+
+\begin{DoxyParams}{Parameters}
+{\em visibility} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Root\+Signature\+Builder.\+h\item 
+Root\+Signature\+Builder.\+cpp\end{DoxyCompactItemize}

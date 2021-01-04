@@ -1,0 +1,49 @@
+\hypertarget{class_window}{}\doxysection{Window Class Reference}
+\label{class_window}\index{Window@{Window}}
+Inheritance diagram for Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_window_ad7b66e446529b9357bb2401f02bf960c}{Handle\+Message}} (H\+W\+ND h\+Wnd, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+\mbox{\Hypertarget{class_window_aa069cf960457531d3a5e0798d3f5e404}\label{class_window_aa069cf960457531d3a5e0798d3f5e404}} 
+virtual void {\bfseries Populate\+Window\+Class} (W\+N\+D\+C\+L\+A\+SS $\ast$wnd\+Class, H\+I\+N\+S\+T\+A\+N\+CE h\+Instance)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual L\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_window_a0a861fdfac1459d95e62b7f4b1b74c5f}{Awake}} (const H\+W\+ND h\+Wnd)=0  throw (\+H\+R\+E\+S\+U\+L\+T)
+\item 
+\mbox{\Hypertarget{class_window_a7bf218a01ac8b77bab04bef32f67ff03}\label{class_window_a7bf218a01ac8b77bab04bef32f67ff03}} 
+L\+R\+E\+S\+U\+LT {\bfseries Terminate} (H\+W\+ND window, H\+R\+E\+S\+U\+LT error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_window_a0a861fdfac1459d95e62b7f4b1b74c5f}\label{class_window_a0a861fdfac1459d95e62b7f4b1b74c5f}} 
+\index{Window@{Window}!Awake@{Awake}}
+\index{Awake@{Awake}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily virtual L\+R\+E\+S\+U\+LT Window\+::\+Awake (\begin{DoxyParamCaption}\item[{const H\+W\+ND}]{h\+Wnd }\end{DoxyParamCaption}) throw ( H\+R\+E\+S\+U\+LT) \hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Abstract method--the routine for initial creation will be different depending on the type of window in question. Event handlers may need to be created, 
+
+Implemented in \mbox{\hyperlink{class_viewport_window_af1086264bfe943569766076a4c161fec}{Viewport\+Window}}.
+
+\mbox{\Hypertarget{class_window_ad7b66e446529b9357bb2401f02bf960c}\label{class_window_ad7b66e446529b9357bb2401f02bf960c}} 
+\index{Window@{Window}!HandleMessage@{HandleMessage}}
+\index{HandleMessage@{HandleMessage}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{HandleMessage()}{HandleMessage()}}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT Window\+::\+Handle\+Message (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd,  }\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
+
+Signal handler for generic \mbox{\hyperlink{class_window}{Window}} class 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+window.\+h\item 
+Window.\+cpp\end{DoxyCompactItemize}

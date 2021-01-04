@@ -1,2 +1,31 @@
 # Jigsaw_Engine_Public
 A public snapshot of a game/rendering engine I've been developing. Most of the commits are in a private repo
+
+
+There are a number of points of interest in here. I recommend checking the 'Diagrams' folder first for access to early images that describe the architecture of the systems.
+This is all obviously a work in progress.
+
+- DirectX 12
+	- There is some early information about the graphics implementation in the 'Graphics' folder. 
+
+- Util/etype_info.h
+	- I have a type info extension object. In some ways, it's filling in some of the reflection/introspection features
+	you see with other languages, but don't worry, at runtime, it's primarily used for indexing and tracking size and alignment of the Entities.
+
+- Entities/JigsawEntity.h, Entities/*
+	- Included is an early implementation of my Entity-component system. Entities are contiguously aligned in memory in 'JigsawEntityClusterNodes.' The implementation is size and alignment sensitive,
+	and types are only destructed when necessary.
+
+- Marshalling/JSONNode.h
+	- Relatively lightweight JSON marshalling/unmarshalling system is included. 
+
+- Assets/AssetDatabase.h/.cpp
+	- The database connection leverages sqlite3. AssetDescriptors are loaded that give meta-information about a target asset. Another table track M2M relationships between Scene Id's and "Machine" ids.
+
+- Assets/AssetManagement.h/.cpp, Scenes/JigsawSceneLoader.h/.cpp
+	- Look here for some multi-threaded code. These classes were aggressively tested to make sure that threads requesting assets from the drive at the same time will not accidentally duplicate them. 
+
+- src/test
+	- Relatively early in the project, I began developing the engine with a TDD approach. The tests are quick and flex systems end to end. 'Units' are thought of as functionality, not methods/classes necessarily,
+	though the tests themselves are organized by class.
+

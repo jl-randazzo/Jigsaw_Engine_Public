@@ -1,0 +1,48 @@
+\hypertarget{class_resource_management_1_1_g_p_u_resource}{}\doxysection{Resource\+Management\+::G\+P\+U\+Resource$<$ T $>$ Class Template Reference}
+\label{class_resource_management_1_1_g_p_u_resource}\index{ResourceManagement::GPUResource$<$ T $>$@{ResourceManagement::GPUResource$<$ T $>$}}
+
+
+{\ttfamily \#include $<$G\+P\+U\+Resources.\+h$>$}
+
+Inheritance diagram for Resource\+Management\+::G\+P\+U\+Resource$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_resource_management_1_1_g_p_u_resource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_resource_a813291e7a86f7396ac9c9ffc5ef68e29}\label{class_resource_management_1_1_g_p_u_resource_a813291e7a86f7396ac9c9ffc5ef68e29}} 
+{\bfseries G\+P\+U\+Resource} (const \mbox{\hyperlink{class_resource_management_1_1_resource_descriptor}{Resource\+Descriptor}} \&descriptor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_resource_a1ceb4cfeff7270f6efcd967e01f9f0eb}\label{class_resource_management_1_1_g_p_u_resource_a1ceb4cfeff7270f6efcd967e01f9f0eb}} 
+virtual void {\bfseries Initialize} (const T $\ast$data, const size\+\_\+t size)=0
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_resource_a2b0e3742c48cb5b7dda9756c2cbcfe7a}\label{class_resource_management_1_1_g_p_u_resource_a2b0e3742c48cb5b7dda9756c2cbcfe7a}} 
+virtual void {\bfseries Update} (const T $\ast$data, const size\+\_\+t size)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_resource_abd9f674958c569f18b2237add22d26de}\label{class_resource_management_1_1_g_p_u_resource_abd9f674958c569f18b2237add22d26de}} 
+\mbox{\hyperlink{class_resource_management_1_1_resource_descriptor}{Resource\+Descriptor}} {\bfseries Update\+Resource} (const \mbox{\hyperlink{class_resource_management_1_1_g_p_u_resource}{G\+P\+U\+Resource}}$<$ T $>$ $\ast$resource, const T $\ast$new\+Data, size\+\_\+t count, Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ cmd\+\_\+list)
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_resource_a45402749ac00c18ebe7989a83b3a1e01}\label{class_resource_management_1_1_g_p_u_resource_a45402749ac00c18ebe7989a83b3a1e01}} 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{class_resource_management_1_1_g_p_u_resource}{G\+P\+U\+Resource}}$<$ T $>$ $\ast$ {\bfseries Create\+Resource} (const T $\ast$data, size\+\_\+t count, Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ cmd\+\_\+list)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Resource\+Management\+::\+G\+P\+U\+Resource$<$ T $>$}
+
+Runtime resources are non-\/fetchable resources. They are meant to be constant buffers or other resources that are not shared and not serialized. They are built at runtime and not loaded from a data segment or stored as a key in the database. The owner is responsible for calling release\+Resources with a reference to the runtime subresource to remove it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Resources.\+h\end{DoxyCompactItemize}

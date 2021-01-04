@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\DirectX">
+      <UniqueIdentifier>{b39e51bf-d550-4117-b1ed-6b206eccf27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DirectX">
+      <UniqueIdentifier>{7c924cee-8240-46b3-8152-175f4bf39282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JMCS">
+      <UniqueIdentifier>{3bcd7d9f-26de-4f7e-a2fd-a578b531c886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{fbab2805-8487-4366-ad00-6a2054c7f04a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{bc569a4c-5f07-4963-ba12-403d3e23b45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{e1bb0279-0858-4f64-9ec2-f14be2c5ecda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera">
+      <UniqueIdentifier>{46fd5ee4-5def-4cff-adb4-bae0d3a8904d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Marshalling">
+      <UniqueIdentifier>{0bfc00df-f628-4648-af72-cf61ca9ebe7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera">
+      <UniqueIdentifier>{890c8f72-4154-4982-ad17-7d2885b1bfe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World">
+      <UniqueIdentifier>{20fff004-b6d6-420d-9dd5-9d9fecbe28de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World\Entities">
+      <UniqueIdentifier>{50e1b552-9628-4832-bbc1-2ccdf1b69423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World">
+      <UniqueIdentifier>{6aaefb9a-5089-4f14-a33d-e67f93c8cfad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World\Entities">
+      <UniqueIdentifier>{e9b5b15a-affb-4b27-aa0b-f86cef48f967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World\Systems">
+      <UniqueIdentifier>{78ba5b11-d304-4103-bca6-5ae3d50e3af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JMACS">
+      <UniqueIdentifier>{93bb03ec-d543-44d2-9b12-19e30a2a85bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World\Systems">
+      <UniqueIdentifier>{d10b14e1-e7db-476b-b0e8-39da2b3b0615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JMACS\Systems">
+      <UniqueIdentifier>{710baf6f-15c4-4d9f-9cd1-445d87367439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World\Objects">
+      <UniqueIdentifier>{7e4092d0-a67d-4f82-9860-b5a11b4495c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DirectX\Resources">
+      <UniqueIdentifier>{f5599dff-1fdc-4cb7-964f-d64d7f99d0ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Marshalling">
+      <UniqueIdentifier>{de072098-8563-437c-98f3-b72bce0aa548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DirectX\Pipeline">
+      <UniqueIdentifier>{c20db2ab-ca14-4db1-ac60-3665b94c9a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DirectX\Pipeline">
+      <UniqueIdentifier>{f61444ea-28da-4ac8-b71c-be34297e6785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{d97c9597-4d84-4d77-846e-55c53f3bcda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{4e636421-2122-4f20-8926-1e2042107d59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{dcf2049f-d61b-4ca0-b8ad-a2d34eb9783e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{eca70db1-d43a-4c2f-a696-d78831f6cffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{9d57ac20-7aad-4610-89e4-65da101dd122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files">
+      <UniqueIdentifier>{86f089e3-b3c0-433c-bd51-91af3fb6b0fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Math">
+      <UniqueIdentifier>{4638d8b4-6ac0-4da2-9b26-d54039746d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\System">
+      <UniqueIdentifier>{f6d9fc7f-9648-41c4-b31b-91e739d3442c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Util">
+      <UniqueIdentifier>{a7ec383f-7697-4bf0-b360-3c79b95de343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{6dea0ccd-8ebc-4858-b805-188592a44555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Entity">
+      <UniqueIdentifier>{fce81f0e-fb51-49d1-b66f-c7fc6c7ed249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Debug">
+      <UniqueIdentifier>{3a102baa-bab6-4480-859e-4fc45e532b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Machines">
+      <UniqueIdentifier>{fcab62a6-22eb-4e75-bea5-04849da19dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Machines">
+      <UniqueIdentifier>{b159e4ab-363d-4aa5-8ddb-33de70cb628c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Machines">
+      <UniqueIdentifier>{f6b06427-239a-4be5-876e-a84e6d93f555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Assets">
+      <UniqueIdentifier>{67014e0d-6299-409a-ae35-61328eb902bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Assets">
+      <UniqueIdentifier>{0806e27a-b93f-4ef8-9595-3792fee8a383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Marshalling">
+      <UniqueIdentifier>{3baaab2e-2eed-43b9-98f4-090af0d21abe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File_IO">
+      <UniqueIdentifier>{717293e5-95dc-47d9-9de6-70fe5b8c85d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assets">
+      <UniqueIdentifier>{74f625e5-f40d-4ded-a949-e00c4e93fc96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File_IO">
+      <UniqueIdentifier>{78365210-c446-4e78-a77b-f802e9726ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{0a141eac-9dd2-477d-9626-3d7d8cfdf0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{3fa81306-9372-45ad-ad53-a61e7120cfb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Scene">
+      <UniqueIdentifier>{a6f52960-9405-42fe-8c0f-acf2f8d3afc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{c8a4df61-42dc-4c24-95ec-ab681be95208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Files\Graphics">
+      <UniqueIdentifier>{8d3e0eb1-8c51-4186-b332-a51e118088ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Camera.h">
+      <Filter>Header Files\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\main_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\MainApplicationOrchestrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\TransformSystem.h">
+      <Filter>Header Files\World\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\xd3d12.h">
+      <Filter>Header Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Application\ApplicationRoot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\ASSET_LOAD_RESULT.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\AssetDatabase.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\AssetManagement.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\BaseAsset.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\DataAssets.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\DirectX\d3dx12_partial.h">
+      <Filter>Header Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\DirectX\DirectXDataLayouts.h">
+      <Filter>Header Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\CommandListExecutor.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Entities\EntityMapping.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Util\etype_info.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\field_data.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Util\BYTE.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Debug\j_debug.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Debug\j_log.h">
+      <Filter>Header Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Entities\JigsawEntity.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Entities\JigsawEntityCluster.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Entities\JigsawEntityClusterService.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\JigsawMachine.h">
+      <Filter>Header Files\Machines</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\JigsawMachineLoader.h">
+      <Filter>Header Files\Machines</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\JigsawMachinePiece.h">
+      <Filter>Header Files\Machines</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\JigsawMarshalling.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Scene\JigsawScene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Scene\JigsawSceneLoader.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\JSONNode.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\MARSHALLING_RESULTS.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\MarshallingMap.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\MarshallingRegistry.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Marshalling\MarshallingUtil.h">
+      <Filter>Header Files\Marshalling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Math\LinAlg.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\MockCommandListExecutor.h">
+      <Filter>Test Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\TestResource.h">
+      <Filter>Test Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\TestUtils.h">
+      <Filter>Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\TestUtils_b.h">
+      <Filter>Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\Pipeline\PipelineService.h">
+      <Filter>Header Files\DirectX\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\Pipeline\RootSignatureBuilder.h">
+      <Filter>Header Files\DirectX\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\System\SignatureMap.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\System\Signature.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\RuntimeAssets.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\System\UID.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\RenderContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\__graphics_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\__graphics_api_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\CommandList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\DirectX\DX_Context.h">
+      <Filter>Header Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Windows\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Windows\ViewportWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\DirectX\DX_CommandList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\DirectX\DX_CommandQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\GPURuntimeObjects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\Pipeline\PipelineObjectBuilder.h">
+      <Filter>Header Files\DirectX\Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\Pipeline\JigsawPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Ref.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\RENDER_DATA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Orchestration\RenderOrchestrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Orchestration\SharedRendererState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Scene\JigsawScenesObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\JigsawMachineObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Physics\Transform.h">
+      <Filter>Header Files\World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Physics\TransformMachinePiece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Util\StringVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\FABRICATION_ARGS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Time\TimeStep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\WorldEntityMachinePiece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Assets\CubeComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Application\ApplicationRootProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\System\ASYNC_JOB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\System\THREAD_SAFE_SYSTEM_RESOURCES.h">
+      <Filter>Header Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Orchestration\SceneHierarchy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Systems\RootSystem.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Systems\SystemRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Orchestration\JigsawSystemsOrchestrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\Systems\TransformSystemMock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Systems\CubeSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Entities\SerializableEntityData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Machines\SerializableMachineData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\Graphics\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\source\Camera.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\MainApplicationOrchestrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Application\ApplicationRoot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Assets\AssetDatabase.cpp">
+      <Filter>Source Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Assets\AssetManagement.cpp">
+      <Filter>Source Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Assets\DataAssets.cpp">
+      <Filter>Source Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Entities\EntityMapping.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Util\etype_info.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\File_IO\FileUtil.h">
+      <Filter>Header Files\File_IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Util\BYTE.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Entities\JigsawEntityCluster.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Entities\JigsawEntityClusterService.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\JigsawMachine.cpp">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\JigsawMachineLoader.cpp">
+      <Filter>Source Files\Machines</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Marshalling\JigsawMarshalling.cpp">
+      <Filter>Source Files\Marshalling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Scene\JigsawScene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Scene\JigsawSceneLoader.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Marshalling\JSONNode.cpp">
+      <Filter>Source Files\Marshalling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\MockCommandListExecutor.cpp">
+      <Filter>Test Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\CameraTest.cpp">
+      <Filter>Source Files\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestUtils.cpp">
+      <Filter>Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\VectorTest.cpp">
+      <Filter>Test Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\Pipeline\PipelineService.cpp">
+      <Filter>Source Files\DirectX\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\Pipeline\RootSignatureBuilder.cpp">
+      <Filter>Source Files\DirectX\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\System\SignatureMap.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\System\Signature.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Assets\RuntimeAssets.cpp">
+      <Filter>Source Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\System\UID.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Entities\JigsawEntityClusterServiceTest.cpp">
+      <Filter>Test Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Entities\JigsawEntityClusterTest.cpp">
+      <Filter>Test Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Entities\JigsawEntityTest.cpp">
+      <Filter>Test Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Assets\TestAssetDatabase.cpp">
+      <Filter>Test Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Assets\TestAssetManagement.cpp">
+      <Filter>Test Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\System\SignatureTest.cpp">
+      <Filter>Test Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Scene\TestJigsawSceneLoader.cpp">
+      <Filter>Test Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Util\etype_info_Test.cpp">
+      <Filter>Test Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Marshalling\JigsawMarshallingTest.cpp">
+      <Filter>Test Files\Marshalling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Debug\j_log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\CommandList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\RenderContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\DirectX\DX_Context.cpp">
+      <Filter>Source Files\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Windows\ViewportWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Windows\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\DirectX\DX_CommandQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\DirectX\DX_CommandList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\Pipeline\PipelineObjectBuilder.cpp">
+      <Filter>Source Files\DirectX\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\GPURuntimeObjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\xd3d12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Scene\JigsawScenesObserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Physics\Transform.cpp">
+      <Filter>Source Files\World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Physics\TransformMachinePiece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\JigsawMachinePiece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Machines\JigsawMachinePieceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\File_IO\FileUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Scene\JigsawSceneObserverTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Util\StringVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Math\LinAlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\JigsawMachineObserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\FABRICATION_ARGS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\WorldEntityMachinePiece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Assets\CubeComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Application\ApplicationRootProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\System\THREAD_SAFE_SYSTEM_RESOURCES.cpp">
+      <Filter>Source Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Orchestration\SceneHierarchyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Orchestration\SceneHierarchy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Systems\RootSystemTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Systems\RootSystem.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Systems\SystemRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Orchestration\JigsawSystemsOrchestratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Systems\TransformSystemMock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Orchestration\JigsawSystemsOrchestrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Systems\CubeSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Machines\SerializableMachineData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Entities\SerializableEntityData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\Graphics\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Assets\BasicPixel.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\BasicVertex.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

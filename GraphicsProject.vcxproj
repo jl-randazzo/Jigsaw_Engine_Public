@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_main|Win32">
+      <Configuration>Test_main</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test_main|x64">
+      <Configuration>Test_main</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|Win32">
+      <Configuration>Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|x64">
+      <Configuration>Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{61D2D0C9-4CD0-4CE2-B4BC-0699E0458E5B}</ProjectGuid>
+    <RootNamespace>GraphicsProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VCInstallDir)Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\sqlite-dll-win32-x86-3320300;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um</IncludePath>
+    <ReferencePath>$(VC_ReferencesPath_x86);$(VCInstallDir)Auxiliary\VS\UnitTest\lib\</ReferencePath>
+    <CodeAnalysisRuleSet>MixedRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LibraryPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x86;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VCInstallDir)Auxiliary\VS\UnitTest\include</IncludePath>
+    <ReferencePath>$(VC_ReferencesPath_x86);$(VCInstallDir)Auxiliary\VS\UnitTest\lib\</ReferencePath>
+    <LibraryPath>$(VC_Project_Dir);$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>ConcurrencyCheckRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VCInstallDir)Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include</IncludePath>
+    <ReferencePath>$(VC_ReferencesPath_x86);"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib\x86"</ReferencePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\sqlite-dll-win32-x86-3320300;$(VCInstallDir)Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;$(ProjectDir)src/external/spdlog/include;$(ProjectDir)src/source/;$(ProjectDir)src/test/;$(ProjectDir)src/;$(ProjectDir)</AdditionalIncludeDirectories>
+      <PreprocessToFile>false</PreprocessToFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_J_WIN_10_;__JIGSAW_DEBUG_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;d3dcompiler.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>xcopy /y "$(ProjectDir)sqlite3.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)sqlite3.lib" "$(OutDir)"
+Xcopy /E /I /y "$(ProjectDir)Assets" "$(OutDir)Assets"
+Xcopy /E /I /y "$(ProjectDir)Lib" "$(OutDir)Lib"
+xcopy /y "$(ProjectDir)jgsw.db" "$(OutDir)"
+xcopy /y "$(ProjectDir)application_root_properties.json" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(VCInstallDir)Auxiliary\VS\UnitTest\include;$(ProjectDir)src/test/;$(ProjectDir)src/source/;$(ProjectDir);$(ProjectDir)src/external/spdlog/include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_RUN_UNIT_TESTS_;_STL_COMPILER_PREPROCESSOR;_J_WIN_10_;__JIGSAW_DEBUG_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;d3dcompiler.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VCInstallDir)Auxiliary\VS\UnitTest\lib\;</AdditionalLibraryDirectories>
+    </Link>
+    <PreLinkEvent>
+      <Command>xcopy /y "$(ProjectDir)sqlite3.dll" "$(OutDir)"
+xcopy /y "$(ProjectDir)sqlite3.lib" "$(OutDir)"
+Xcopy /E /I /y "$(ProjectDir)Assets" "$(OutDir)Assets"
+Xcopy /E /I /y "$(ProjectDir)Lib" "$(OutDir)Lib"
+xcopy /y "$(ProjectDir)jgsw.db" "$(OutDir)"
+xcopy /y "$(ProjectDir)application_root_properties.json" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\include;$(VCInstallDir)Auxiliary\VS\UnitTest\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_RUN_UNIT_TESTS_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>d3d12.lib;Microsoft.VisualStudio.TestTools.CppUnitTestFramework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\UnitTest\lib\x86"</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x86\d3d12.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test_main|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x86\d3d12.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x86\d3d12.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d12.lib;d3d11.lib;d3dcompiler.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\source\Application\ApplicationRootProperties.h" />
+    <ClInclude Include="src\source\Assets\ASSET_LOAD_RESULT.h" />
+    <ClInclude Include="src\source\Assets\CubeComponent.h" />
+    <ClInclude Include="src\source\Entities\SerializableEntityData.h" />
+    <ClInclude Include="src\source\Graphics\DirectX\DX_CommandList.h" />
+    <ClInclude Include="src\source\Graphics\DirectX\DX_CommandQueue.h" />
+    <ClInclude Include="src\source\Graphics\GPURuntimeObjects.h" />
+    <ClInclude Include="src\source\Graphics\CommandList.h" />
+    <ClInclude Include="src\source\Graphics\Pipeline\JigsawPipeline.h" />
+    <ClInclude Include="src\source\Graphics\RenderContext.h" />
+    <ClInclude Include="src\source\Graphics\Renderer.h" />
+    <ClInclude Include="src\source\Graphics\RENDER_DATA.h" />
+    <ClInclude Include="src\source\Graphics\__graphics_api.h" />
+    <ClInclude Include="src\source\Graphics\__graphics_api_context.h" />
+    <ClInclude Include="src\source\Machines\FABRICATION_ARGS.h" />
+    <ClInclude Include="src\source\Machines\JigsawMachineObserver.h" />
+    <ClInclude Include="src\source\Machines\SerializableMachineData.h" />
+    <ClInclude Include="src\source\Machines\WorldEntityMachinePiece.h" />
+    <ClInclude Include="src\source\Orchestration\JigsawSystemsOrchestrator.h" />
+    <ClInclude Include="src\source\Orchestration\SceneHierarchy.h" />
+    <ClInclude Include="src\source\Physics\TransformMachinePiece.h" />
+    <ClInclude Include="src\source\Orchestration\RenderOrchestrator.h" />
+    <ClInclude Include="src\source\Orchestration\SharedRendererState.h" />
+    <ClInclude Include="src\source\Scene\JigsawScenesObserver.h" />
+    <ClInclude Include="src\source\Systems\CubeSystem.h" />
+    <ClInclude Include="src\source\System\ASYNC_JOB.h" />
+    <ClInclude Include="src\source\Time\TimeStep.h" />
+    <ClInclude Include="src\source\Util\BYTE.h" />
+    <ClInclude Include="src\source\Graphics\CommandListExecutor.h" />
+    <ClInclude Include="src\source\Graphics\DirectX\d3dx12_partial.h" />
+    <ClInclude Include="src\source\Assets\DataAssets.h" />
+    <ClInclude Include="src\source\Entities\EntityMapping.h" />
+    <ClInclude Include="src\source\Util\etype_info.h" />
+    <ClInclude Include="src\source\Marshalling\field_data.h" />
+    <ClInclude Include="src\source\Machines\JigsawMachineLoader.h" />
+    <ClInclude Include="src\source\Scene\JigsawScene.h" />
+    <ClInclude Include="src\source\Scene\JigsawSceneLoader.h" />
+    <ClInclude Include="src\source\Marshalling\JSONNode.h" />
+    <ClInclude Include="src\source\Marshalling\MarshallingMap.h" />
+    <ClInclude Include="src\source\Marshalling\MarshallingRegistry.h" />
+    <ClInclude Include="src\source\Marshalling\MarshallingUtil.h" />
+    <ClInclude Include="src\source\Marshalling\MARSHALLING_RESULTS.h" />
+    <ClInclude Include="src\source\Util\StringVector.h" />
+    <ClInclude Include="src\test\MockCommandListExecutor.h" />
+    <ClInclude Include="src\source\Systems\SystemRegistry.h" />
+    <ClInclude Include="src\test\Systems\TransformSystemMock.h" />
+    <ClInclude Include="src\test\TestResource.h" />
+    <ClInclude Include="src\source\Entities\JigsawEntity.h" />
+    <ClInclude Include="src\source\Entities\JigsawEntityCluster.h" />
+    <ClInclude Include="src\source\Entities\JigsawEntityClusterService.h" />
+    <ClInclude Include="src\source\Machines\JigsawMachine.h" />
+    <ClInclude Include="src\source\Machines\JigsawMachinePiece.h" />
+    <ClInclude Include="src\source\Debug\j_debug.h" />
+    <ClInclude Include="src\source\Debug\j_log.h" />
+    <ClInclude Include="src\source\MainApplicationOrchestrator.h" />
+    <ClInclude Include="src\source\Graphics\Pipeline\PipelineService.h" />
+    <ClInclude Include="src\source\Graphics\Pipeline\PipelineObjectBuilder.h" />
+    <ClInclude Include="src\source\Ref.h" />
+    <ClInclude Include="src\source\Assets\AssetManagement.h" />
+    <ClInclude Include="src\source\Camera.h" />
+    <ClInclude Include="src\source\Graphics\DirectX\DirectXDataLayouts.h" />
+    <ClInclude Include="src\source\Graphics\DirectX\DX_Context.h" />
+    <ClInclude Include="src\source\Math\LinAlg.h" />
+    <ClInclude Include="src\source\main_header.h" />
+    <ClInclude Include="src\source\Marshalling\JigsawMarshalling.h" />
+    <ClInclude Include="src\source\pch.h" />
+    <ClInclude Include="src\source\Graphics\Pipeline\RootSignatureBuilder.h" />
+    <ClInclude Include="src\source\Systems\RootSystem.h" />
+    <ClInclude Include="src\source\Assets\BaseAsset.h" />
+    <ClInclude Include="src\source\Assets\RuntimeAssets.h" />
+    <ClInclude Include="src\source\System\Signature.h" />
+    <ClInclude Include="src\source\System\SignatureMap.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="src\source\Assets\AssetDatabase.h" />
+    <ClInclude Include="src\test\TestUtils.h" />
+    <ClInclude Include="src\test\TestUtils_b.h" />
+    <ClInclude Include="src\source\System\THREAD_SAFE_SYSTEM_RESOURCES.h" />
+    <ClInclude Include="src\source\Physics\Transform.h" />
+    <ClInclude Include="src\source\TransformSystem.h" />
+    <ClInclude Include="src\source\System\UID.h" />
+    <ClInclude Include="src\source\Windows\ViewportWindow.h" />
+    <ClInclude Include="src\source\Windows\window.h" />
+    <ClInclude Include="src\source\Application\ApplicationRoot.h" />
+    <ClInclude Include="src\source\xd3d12.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\source\Application\ApplicationRootProperties.cpp" />
+    <ClCompile Include="src\source\Assets\CubeComponent.cpp" />
+    <ClCompile Include="src\source\Debug\j_log.cpp" />
+    <ClCompile Include="src\source\Entities\SerializableEntityData.cpp" />
+    <ClCompile Include="src\source\File_IO\FileUtil.cpp" />
+    <ClCompile Include="src\source\Graphics\CommandList.cpp" />
+    <ClCompile Include="src\source\Graphics\DirectX\DX_CommandList.cpp" />
+    <ClCompile Include="src\source\Graphics\DirectX\DX_CommandQueue.cpp" />
+    <ClCompile Include="src\source\Graphics\GPURuntimeObjects.cpp" />
+    <ClCompile Include="src\source\Graphics\RenderContext.cpp" />
+    <ClCompile Include="src\source\Graphics\Renderer.cpp" />
+    <ClCompile Include="src\source\Machines\FABRICATION_ARGS.cpp" />
+    <ClCompile Include="src\source\Machines\JigsawMachineObserver.cpp" />
+    <ClCompile Include="src\source\Machines\JigsawMachinePiece.cpp" />
+    <ClCompile Include="src\source\Machines\SerializableMachineData.cpp" />
+    <ClCompile Include="src\source\Machines\WorldEntityMachinePiece.cpp" />
+    <ClCompile Include="src\source\Math\LinAlg.cpp" />
+    <ClCompile Include="src\source\Orchestration\JigsawSystemsOrchestrator.cpp" />
+    <ClCompile Include="src\source\Orchestration\SceneHierarchy.cpp" />
+    <ClCompile Include="src\source\Physics\TransformMachinePiece.cpp" />
+    <ClCompile Include="src\source\Scene\JigsawScenesObserver.cpp" />
+    <ClCompile Include="src\source\Systems\CubeSystem.cpp" />
+    <ClCompile Include="src\source\Systems\SystemRegistry.cpp" />
+    <ClCompile Include="src\source\Util\BYTE.cpp" />
+    <ClCompile Include="src\source\Camera.cpp" />
+    <ClCompile Include="src\source\Util\StringVector.cpp" />
+    <ClCompile Include="src\source\xd3d12.cpp" />
+    <ClCompile Include="src\test\CameraTest.cpp" />
+    <ClCompile Include="src\source\Graphics\DirectX\DX_Context.cpp" />
+    <ClCompile Include="src\source\Entities\EntityMapping.cpp" />
+    <ClCompile Include="src\source\Util\etype_info.cpp" />
+    <ClCompile Include="src\test\Machines\JigsawMachinePieceTest.cpp" />
+    <ClCompile Include="src\test\Orchestration\JigsawSystemsOrchestratorTest.cpp" />
+    <ClCompile Include="src\test\Orchestration\SceneHierarchyTest.cpp" />
+    <ClCompile Include="src\test\Scene\JigsawSceneObserverTest.cpp" />
+    <ClCompile Include="src\test\Systems\RootSystemTest.cpp" />
+    <ClCompile Include="src\test\Systems\TransformSystemMock.cpp" />
+    <ClCompile Include="src\test\Util\etype_info_Test.cpp" />
+    <ClCompile Include="src\source\File_IO\FileUtil.h" />
+    <ClCompile Include="src\source\Entities\JigsawEntityCluster.cpp" />
+    <ClCompile Include="src\source\Entities\JigsawEntityClusterService.cpp" />
+    <ClCompile Include="src\test\Entities\JigsawEntityClusterServiceTest.cpp" />
+    <ClCompile Include="src\test\Entities\JigsawEntityClusterTest.cpp" />
+    <ClCompile Include="src\test\Entities\JigsawEntityTest.cpp" />
+    <ClCompile Include="src\source\Machines\JigsawMachine.cpp" />
+    <ClCompile Include="src\source\Machines\JigsawMachineLoader.cpp" />
+    <ClCompile Include="src\test\Marshalling\JigsawMarshallingTest.cpp" />
+    <ClCompile Include="src\source\Scene\JigsawScene.cpp" />
+    <ClCompile Include="src\source\Scene\JigsawSceneLoader.cpp" />
+    <ClCompile Include="src\source\Marshalling\JSONNode.cpp" />
+    <ClCompile Include="src\source\MainApplicationOrchestrator.cpp" />
+    <ClCompile Include="src\source\Marshalling\JigsawMarshalling.cpp" />
+    <ClCompile Include="src\source\main.cpp" />
+    <ClCompile Include="src\test\MockCommandListExecutor.cpp" />
+    <ClCompile Include="src\source\pch.cpp" />
+    <ClCompile Include="src\source\Graphics\Pipeline\PipelineService.cpp" />
+    <ClCompile Include="src\source\Graphics\Pipeline\PipelineObjectBuilder.cpp" />
+    <ClCompile Include="src\source\Assets\AssetManagement.cpp" />
+    <ClCompile Include="src\source\Assets\DataAssets.cpp" />
+    <ClCompile Include="src\source\Assets\RuntimeAssets.cpp" />
+    <ClCompile Include="src\source\Graphics\Pipeline\RootSignatureBuilder.cpp" />
+    <ClCompile Include="src\source\Systems\RootSystem.cpp" />
+    <ClCompile Include="src\source\System\Signature.cpp" />
+    <ClCompile Include="src\source\System\SignatureMap.cpp" />
+    <ClCompile Include="src\test\System\SignatureTest.cpp" />
+    <ClCompile Include="src\source\Assets\AssetDatabase.cpp" />
+    <ClCompile Include="src\test\Assets\TestAssetDatabase.cpp" />
+    <ClCompile Include="src\test\Assets\TestAssetManagement.cpp" />
+    <ClCompile Include="src\test\Scene\TestJigsawSceneLoader.cpp" />
+    <ClCompile Include="src\test\TestUtils.cpp" />
+    <ClCompile Include="src\source\System\THREAD_SAFE_SYSTEM_RESOURCES.cpp" />
+    <ClCompile Include="src\source\Physics\Transform.cpp" />
+    <ClCompile Include="src\source\System\UID.cpp" />
+    <ClCompile Include="src\test\VectorTest.cpp" />
+    <ClCompile Include="src\source\Windows\ViewportWindow.cpp" />
+    <ClCompile Include="src\source\Application\ApplicationRoot.cpp" />
+    <ClCompile Include="src\source\Windows\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Assets\BasicPixel.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test_main|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test_main|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test|x64'">Pixel</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Debug\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Assets\BasicVertex.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test_main|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test_main|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Test|x64'">Vertex</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Debug\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

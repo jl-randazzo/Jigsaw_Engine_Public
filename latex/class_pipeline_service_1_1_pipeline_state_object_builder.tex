@@ -1,0 +1,194 @@
+\hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder}{}\doxysection{Pipeline\+Service\+::Pipeline\+State\+Object\+Builder Class Reference}
+\label{class_pipeline_service_1_1_pipeline_state_object_builder}\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+
+
+Pipeline State Object Builder is a simple interface used primarily by the \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_service_manager}{Pipeline\+Service\+Manager}} to quickly build pipelines without concerning the user about creating custom Structs. All of the Stream Subobjects are placed directly in void-\/aligned memory  
+
+
+
+
+{\ttfamily \#include $<$Pipeline\+State\+Object\+Builder.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_ace0ac08de06c2a14d3746c74b64ae754}{Add\+Shader}} (const \mbox{\hyperlink{class_resource_management_1_1_shader_resource}{Resource\+Management\+::\+Shader\+Resource}} $\ast$shader)
+\begin{DoxyCompactList}\small\item\em Adds a shader of any type to the Pipeline State Object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_a2ed9f4d5be713e73bd5e4e32056b822d}{I\+A\+Push\+Per\+Vertex\+Desc}} (L\+P\+C\+S\+TR semantic\+\_\+name, const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\begin{DoxyCompactList}\small\item\em Pushes a single element to the list of Input Assembler Vertex data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_a59575012b7c25d77952b58f2732d5cc5}{S\+O\+Push\+Output\+Parameter}} (L\+P\+C\+S\+TR semantic\+\_\+name, const U\+I\+NT semantic\+\_\+index, const U\+I\+NT component\+\_\+count, const U\+I\+NT output\+\_\+slot)
+\begin{DoxyCompactList}\small\item\em Pushes an output parameter to be exposed in Stream Output stage \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_ac94c986e4382d19922a468a39f09f0d6}{R\+S\+Set\+Root\+Signature}} (\mbox{\hyperlink{class_resource_management_1_1_root_signature_resource}{Resource\+Management\+::\+Root\+Signature\+Resource}} $\ast$rs\+\_\+resource)
+\begin{DoxyCompactList}\small\item\em Sets the root signature for the pipeline \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_abac8370fe7ce2d740e414ef24b7d3730}{R\+T\+V\+Add\+Target\+Format}} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\begin{DoxyCompactList}\small\item\em Increments the count of render targets and binds the format to the added target \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_a9badb0e36a1c3af1257c7573b9f45215}{D\+S\+V\+Set\+Format}} (D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT format)
+\begin{DoxyCompactList}\small\item\em Sets the format for the Depth stencil view \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_ab1f29bca20912a8bd1416395dd229983}{Set\+Primitive\+Topology}} (D3\+D12\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+G\+Y\+\_\+\+T\+Y\+PE topology\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Primitive topology type for P\+SO set here \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_resource_management_1_1_pipeline_state_resource}{Resource\+Management\+::\+Pipeline\+State\+Resource}} $\ast$ \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder_a9f62de66b3c5cb536c9256950ef0a8a5}{Build}} (Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ cmd\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Returns a fully-\/constructed pipeline state object. This is the final step. All of the other methods should be called prior to the final \textquotesingle{}Build\textquotesingle{} call. If the arguments were ill-\/formed, an exception will be thrown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pipeline State Object Builder is a simple interface used primarily by the \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_service_manager}{Pipeline\+Service\+Manager}} to quickly build pipelines without concerning the user about creating custom Structs. All of the Stream Subobjects are placed directly in void-\/aligned memory 
+
+$<$author$>$ Luke Randazzo $<$/author$>$ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_ace0ac08de06c2a14d3746c74b64ae754}\label{class_pipeline_service_1_1_pipeline_state_object_builder_ace0ac08de06c2a14d3746c74b64ae754}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!AddShader@{AddShader}}
+\index{AddShader@{AddShader}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{AddShader()}{AddShader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+Add\+Shader (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_resource_management_1_1_shader_resource}{Resource\+Management\+::\+Shader\+Resource}} $\ast$}]{shader }\end{DoxyParamCaption})}
+
+
+
+Adds a shader of any type to the Pipeline State Object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_a9f62de66b3c5cb536c9256950ef0a8a5}\label{class_pipeline_service_1_1_pipeline_state_object_builder_a9f62de66b3c5cb536c9256950ef0a8a5}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!Build@{Build}}
+\index{Build@{Build}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_management_1_1_pipeline_state_resource}{Pipeline\+State\+Resource}} $\ast$ Pipeline\+State\+Object\+Builder\+::\+Build (\begin{DoxyParamCaption}\item[{Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$}]{cmd\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Returns a fully-\/constructed pipeline state object. This is the final step. All of the other methods should be called prior to the final \textquotesingle{}Build\textquotesingle{} call. If the arguments were ill-\/formed, an exception will be thrown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+list} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_a9badb0e36a1c3af1257c7573b9f45215}\label{class_pipeline_service_1_1_pipeline_state_object_builder_a9badb0e36a1c3af1257c7573b9f45215}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!DSVSetFormat@{DSVSetFormat}}
+\index{DSVSetFormat@{DSVSetFormat}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{DSVSetFormat()}{DSVSetFormat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+D\+S\+V\+Set\+Format (\begin{DoxyParamCaption}\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})}
+
+
+
+Sets the format for the Depth stencil view 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_a2ed9f4d5be713e73bd5e4e32056b822d}\label{class_pipeline_service_1_1_pipeline_state_object_builder_a2ed9f4d5be713e73bd5e4e32056b822d}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!IAPushPerVertexDesc@{IAPushPerVertexDesc}}
+\index{IAPushPerVertexDesc@{IAPushPerVertexDesc}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{IAPushPerVertexDesc()}{IAPushPerVertexDesc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+I\+A\+Push\+Per\+Vertex\+Desc (\begin{DoxyParamCaption}\item[{L\+P\+C\+S\+TR}]{semantic\+\_\+name,  }\item[{const D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})}
+
+
+
+Pushes a single element to the list of Input Assembler Vertex data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em semantic\+\_\+name} & \\
+\hline
+{\em format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_ac94c986e4382d19922a468a39f09f0d6}\label{class_pipeline_service_1_1_pipeline_state_object_builder_ac94c986e4382d19922a468a39f09f0d6}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!RSSetRootSignature@{RSSetRootSignature}}
+\index{RSSetRootSignature@{RSSetRootSignature}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{RSSetRootSignature()}{RSSetRootSignature()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+R\+S\+Set\+Root\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_resource_management_1_1_root_signature_resource}{Resource\+Management\+::\+Root\+Signature\+Resource}} $\ast$}]{rs\+\_\+resource }\end{DoxyParamCaption})}
+
+
+
+Sets the root signature for the pipeline 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs\+\_\+resource} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_abac8370fe7ce2d740e414ef24b7d3730}\label{class_pipeline_service_1_1_pipeline_state_object_builder_abac8370fe7ce2d740e414ef24b7d3730}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!RTVAddTargetFormat@{RTVAddTargetFormat}}
+\index{RTVAddTargetFormat@{RTVAddTargetFormat}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{RTVAddTargetFormat()}{RTVAddTargetFormat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+R\+T\+V\+Add\+Target\+Format (\begin{DoxyParamCaption}\item[{D\+X\+G\+I\+\_\+\+F\+O\+R\+M\+AT}]{format }\end{DoxyParamCaption})}
+
+
+
+Increments the count of render targets and binds the format to the added target 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_ab1f29bca20912a8bd1416395dd229983}\label{class_pipeline_service_1_1_pipeline_state_object_builder_ab1f29bca20912a8bd1416395dd229983}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!SetPrimitiveTopology@{SetPrimitiveTopology}}
+\index{SetPrimitiveTopology@{SetPrimitiveTopology}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{SetPrimitiveTopology()}{SetPrimitiveTopology()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+Set\+Primitive\+Topology (\begin{DoxyParamCaption}\item[{D3\+D12\+\_\+\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+T\+O\+P\+O\+L\+O\+G\+Y\+\_\+\+T\+Y\+PE}]{topology\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Primitive topology type for P\+SO set here 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topology\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pipeline_service_1_1_pipeline_state_object_builder_a59575012b7c25d77952b58f2732d5cc5}\label{class_pipeline_service_1_1_pipeline_state_object_builder_a59575012b7c25d77952b58f2732d5cc5}} 
+\index{PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}!SOPushOutputParameter@{SOPushOutputParameter}}
+\index{SOPushOutputParameter@{SOPushOutputParameter}!PipelineService::PipelineStateObjectBuilder@{PipelineService::PipelineStateObjectBuilder}}
+\doxysubsubsection{\texorpdfstring{SOPushOutputParameter()}{SOPushOutputParameter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pipeline_service_1_1_pipeline_state_object_builder}{Pipeline\+State\+Object\+Builder}} \& Pipeline\+State\+Object\+Builder\+::\+S\+O\+Push\+Output\+Parameter (\begin{DoxyParamCaption}\item[{L\+P\+C\+S\+TR}]{semantic\+\_\+name,  }\item[{const U\+I\+NT}]{semantic\+\_\+index,  }\item[{const U\+I\+NT}]{component\+\_\+count,  }\item[{const U\+I\+NT}]{output\+\_\+slot }\end{DoxyParamCaption})}
+
+
+
+Pushes an output parameter to be exposed in Stream Output stage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em semantic\+\_\+name} & \\
+\hline
+{\em component\+\_\+count} & \\
+\hline
+{\em output\+\_\+slot} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pipeline\+State\+Object\+Builder.\+h\item 
+Pipeline\+State\+Object\+Builder.\+cpp\end{DoxyCompactItemize}

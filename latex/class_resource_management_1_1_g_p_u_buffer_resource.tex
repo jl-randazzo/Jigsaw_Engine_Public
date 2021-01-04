@@ -1,0 +1,68 @@
+\hypertarget{class_resource_management_1_1_g_p_u_buffer_resource}{}\doxysection{Resource\+Management\+::G\+P\+U\+Buffer\+Resource Class Reference}
+\label{class_resource_management_1_1_g_p_u_buffer_resource}\index{ResourceManagement::GPUBufferResource@{ResourceManagement::GPUBufferResource}}
+
+
+Class is designed for multiple inheritance with another Resource class, likely \mbox{\hyperlink{class_resource_management_1_1_g_p_u_resource}{G\+P\+U\+Resource}}  
+
+
+
+
+{\ttfamily \#include $<$G\+P\+U\+Resources.\+h$>$}
+
+Inheritance diagram for Resource\+Management\+::G\+P\+U\+Buffer\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.066421cm]{class_resource_management_1_1_g_p_u_buffer_resource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_buffer_resource_a5caaa50830dbbdc9b20b0a06c90918fd}\label{class_resource_management_1_1_g_p_u_buffer_resource_a5caaa50830dbbdc9b20b0a06c90918fd}} 
+{\bfseries G\+P\+U\+Buffer\+Resource} (const \mbox{\hyperlink{class_resource_management_1_1_resource_descriptor}{Resource\+Descriptor}} \&descriptor)
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_buffer_resource_a9adafe896f8cee1409c7f2bd5ff868a5}\label{class_resource_management_1_1_g_p_u_buffer_resource_a9adafe896f8cee1409c7f2bd5ff868a5}} 
+I\+D3\+D12\+Resource $\ast$ {\bfseries Get\+Resource} () const
+\item 
+void \mbox{\hyperlink{class_resource_management_1_1_g_p_u_buffer_resource_a336d9cb62ae0ddc628b4de57218adef9}{Transition}} (const Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ \&cmd\+\_\+list, D3\+D12\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+T\+A\+T\+ES next\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Transition method moves the state of the current buffer resource and adjusts the state internally \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_buffer_resource_a5f1d6cdb017e19de515c543021096918}\label{class_resource_management_1_1_g_p_u_buffer_resource_a5f1d6cdb017e19de515c543021096918}} 
+Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Resource $>$ {\bfseries base\+\_\+resource}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_buffer_resource_a8c7d19bd6cf5763b704f1af22a29fc89}\label{class_resource_management_1_1_g_p_u_buffer_resource_a8c7d19bd6cf5763b704f1af22a29fc89}} 
+D3\+D12\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+T\+A\+T\+ES {\bfseries resource\+\_\+state}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class is designed for multiple inheritance with another Resource class, likely \mbox{\hyperlink{class_resource_management_1_1_g_p_u_resource}{G\+P\+U\+Resource}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_management_1_1_g_p_u_buffer_resource_a336d9cb62ae0ddc628b4de57218adef9}\label{class_resource_management_1_1_g_p_u_buffer_resource_a336d9cb62ae0ddc628b4de57218adef9}} 
+\index{ResourceManagement::GPUBufferResource@{ResourceManagement::GPUBufferResource}!Transition@{Transition}}
+\index{Transition@{Transition}!ResourceManagement::GPUBufferResource@{ResourceManagement::GPUBufferResource}}
+\doxysubsubsection{\texorpdfstring{Transition()}{Transition()}}
+{\footnotesize\ttfamily void Resource\+Management\+::\+G\+P\+U\+Buffer\+Resource\+::\+Transition (\begin{DoxyParamCaption}\item[{const Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ \&}]{cmd\+\_\+list,  }\item[{D3\+D12\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+S\+T\+A\+T\+ES}]{next\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transition method moves the state of the current buffer resource and adjusts the state internally 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+list} & \\
+\hline
+{\em next\+\_\+state} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Resources.\+h\end{DoxyCompactItemize}

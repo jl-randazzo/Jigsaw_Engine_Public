@@ -1,0 +1,50 @@
+\hypertarget{class_resource_management_1_1_geometry_shader_resource}{}\doxysection{Resource\+Management\+::Geometry\+Shader\+Resource Class Reference}
+\label{class_resource_management_1_1_geometry_shader_resource}\index{ResourceManagement::GeometryShaderResource@{ResourceManagement::GeometryShaderResource}}
+
+
+{\ttfamily \#include $<$Asset\+Resources.\+h$>$}
+
+Inheritance diagram for Resource\+Management\+::Geometry\+Shader\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_resource_management_1_1_geometry_shader_resource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_geometry_shader_resource_a9edcebf7f5aab8ea5e24e70a0c7a43d9}\label{class_resource_management_1_1_geometry_shader_resource_a9edcebf7f5aab8ea5e24e70a0c7a43d9}} 
+{\bfseries Geometry\+Shader\+Resource} (const \mbox{\hyperlink{class_resource_management_1_1_resource_descriptor}{Resource\+Descriptor}} \&descriptor)
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_geometry_shader_resource_aa9a82f446dabc83120b7274c2254fd92}\label{class_resource_management_1_1_geometry_shader_resource_aa9a82f446dabc83120b7274c2254fd92}} 
+I\+D3\+D\+Blob $\ast$ {\bfseries Get\+Shader} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_geometry_shader_resource_afe115ce44c120498f5fe759842968165}\label{class_resource_management_1_1_geometry_shader_resource_afe115ce44c120498f5fe759842968165}} 
+H\+R\+E\+S\+U\+LT {\bfseries Load} (const \mbox{\hyperlink{struct_resource_management_1_1_f_i_l_e___d_a_t_a}{F\+I\+L\+E\+\_\+\+D\+A\+TA}} \&file\+\_\+data, Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D12\+Graphics\+Command\+List $>$ cmd\+\_\+list)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_geometry_shader_resource_ab6dd7e45441b76c5c0c6911c7094875d}\label{class_resource_management_1_1_geometry_shader_resource_ab6dd7e45441b76c5c0c6911c7094875d}} 
+D3\+D12\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+B\+Y\+T\+E\+C\+O\+DE {\bfseries bytecode\+\_\+desc}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_geometry_shader_resource_a4ef148a941c5cbfa030152d0c9d4bc7a}\label{class_resource_management_1_1_geometry_shader_resource_a4ef148a941c5cbfa030152d0c9d4bc7a}} 
+Microsoft\+::\+W\+R\+L\+::\+Com\+Ptr$<$ I\+D3\+D\+Blob $>$ {\bfseries geometry\+\_\+shader}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_management_1_1_geometry_shader_resource_aa83faade73d33d8ff26fcafca4534674}\label{class_resource_management_1_1_geometry_shader_resource_aa83faade73d33d8ff26fcafca4534674}} 
+\mbox{\hyperlink{class_resource_management_1_1_geometry_shader_resource}{Geometry\+Shader\+Resource}} $\ast$ {\bfseries Create\+Mock\+Geometry\+Shader\+For\+Stream\+Output} (const \mbox{\hyperlink{class_resource_management_1_1_vertex_shader_resource}{Vertex\+Shader\+Resource}} \&vertex\+\_\+shader, const D3\+D11\+\_\+\+S\+O\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+O\+N\+\_\+\+E\+N\+T\+RY $\ast$so\+\_\+declarations, const size\+\_\+t decl\+\_\+count, const size\+\_\+t stride)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Geometry shader, can be mocked from a vertex shader if the goal is to use it with the SO stage 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Asset\+Resources.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+{
+	"@type":"ApplicationRootProperties",
+	"root_scene_id":{
+		"@type":"Jigsaw::System::UID",
+		"value":"F1207D0A-4E50-4F6D-8EC6-D4DD4ABBDDDC"
+	},
+	"db_connection":"./jgsw.db"
+}
